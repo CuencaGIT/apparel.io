@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans';
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  background-repeat: no-repeat;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 1.8em;
+}
+header img {
+  width: 6.3em;
+}
+.txt-btn {
+  text-align: center;
+}
+main h1 {
+  font-size: 2.4em;
+  color: hsl(0, 6%, 24%);
+  text-transform: uppercase;
+  padding: 1em;
+  letter-spacing: 0.3em;
+  line-height: 1.1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+main h1 span {
+  font-weight: 100;
+  color: hsl(0, 36%, 70%);
+}
+main p {
+  color: hsl(0, 36%, 70%);
+  padding: 0 3em;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+input {
+  padding: 1.2em;
+  border: 1px solid hsl(0, 36%, 70%);
+  margin: 2em 0 5em 2em;
+  width: 18em;
+  border-radius: 2em 0.5em 0.5em 2em;
+  opacity: 70%;
+}
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 50%;
+}
+a {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 1em;
+  border-radius: 1.6em;
+  display: inline-block;
+  transform: translate(-55%, 0.1em);
+  width: 2.5em;
+}
+a img {
+  height: 1em;
+  width: 1em;
+}
+
+@media (min-width: 1440px) {
+  body {
+    overflow: hidden;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .txt-btn .m-hero {
+    content: url(images/hero-desktop.jpg);
+    float: right;
+    width: 43%;
+    transform: translate(-0%, -22%);
+  }
+  .txt-btn {
+    text-align: start;
+  }
+  header {
+    width: 45%;
+  }
+  header img {
+    width: 10em;
+    padding: 2.5em 9em;
+  }
+  main h1 {
+    font-size: 4em;
+    margin-left: 1.6em;
+    margin-right: 11em;
+    padding-top: 0;
+  }
+  main p {
+    font-size: 1em;
+    margin-right: 49em;
+    margin-left: 7.5em;
+    line-height: 1.7em;
+  }
+  input {
+    padding: 1.5em;
+    border: 1px solid hsl(0, 36%, 70%);
+    margin: 2em 0 0em 2em;
+    width: 26em;
+    border-radius: 2em 0.5em 0.5em 2em;
+    opacity: 70%;
+    background-color: transparent;
+  }
+  input::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 50%;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-left: 1em;
+  }
+  a {
+    background-image: linear-gradient(
+      135deg,
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+    padding: 1.2em;
+    border-radius: 3.125em;
+    display: inline-block;
+    transform: translate(-55%, 0.1em);
+    width: 4.1em;
+  }
+  a:hover {
+    background-image: linear-gradient(
+      135deg,
+      hsl(0, 42%, 91%),
+      hsl(0, 44%, 69%)
+    );
+  }
+  a img {
+    height: 1em;
+    width: 1em;
+    margin-left: 1.5em;
+  }
+
+  .type {
+    margin-left: 9em;
+  }
+  .type p {
+    margin: 1em;
+    padding: 0 1em;
+    opacity: 0;
+  }
+  .type p img {
+    position: absolute;
+    top: 74.5%;
+    left: 32%;
+  }
+}
